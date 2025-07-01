@@ -12,6 +12,10 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<TransactionDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("Default")));
 
+builder.WebHost.ConfigureKestrel(serverOptions =>
+{
+    serverOptions.ListenLocalhost(5121);
+});
 
 var app = builder.Build();
 
@@ -31,6 +35,12 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Transaction}/{action=Create}/{id?}");
+
+using (var scope = app.Services.CreateScope())
+{
+    var db = scope.ServiceProvider.GetRequiredService<TransactionDbContext>();
+    db.Database.EnsureCreated(); // or db.Database.Migrate();
+}
 
 app.Run();
 

@@ -7,7 +7,7 @@ public class TransactionCreatePathTest : BasePathTest
     [Test]
     public async Task CreateTransaction_EndToEnd()
     {
-        var baseUrl = "https://localhost:7237";
+        var baseUrl = "http://localhost:5121";
         var path = new TransactionCreatePath();
 
         foreach (var node in path.Nodes)
