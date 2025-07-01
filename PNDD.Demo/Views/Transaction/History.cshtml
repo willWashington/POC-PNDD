@@ -1,0 +1,12 @@
+﻿@model IEnumerable<PNDD.Demo.Models.Transaction>
+
+<h2>Transaction History</h2>
+<table>
+    @foreach (var txn in Model)
+    {
+        <tr>
+            <td>@txn.Description</td>
+            <td>@txn.Amount</td>
+        </tr>
+    }
+</table>

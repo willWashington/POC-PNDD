@@ -1,0 +1,11 @@
+"**/bin/" 
+"**/obj/" 
+".vs/" 
+"*.user" 
+"*.suo" 
+"TestResults/" 
+/PNDD.Demo/.vs
+/PNDD.Demo/bin/Debug/net8.0
+/PNDD.Demo/obj
+/PNDD.Demo.Tests/bin/Debug/net8.0
+/PNDD.Demo.Tests/obj

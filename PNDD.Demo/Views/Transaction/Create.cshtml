@@ -1,0 +1,13 @@
+﻿@model PNDD.Demo.Models.Transaction
+
+<h2>Create Transaction</h2>
+
+<form method="post">
+    <label for="Description">Description</label>
+    <input asp-for="Description" id="Description" name="Description" />
+    <br />
+    <label for="Amount">Amount</label>
+    <input asp-for="Amount" id="Amount" name="Amount" />
+    <br />
+    <button type="submit">Submit</button>
+</form>
