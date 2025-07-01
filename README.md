@@ -106,6 +106,7 @@ public async Task CreateTransaction_EndToEnd()
 ---
 
 ## Structure
+```
 PNDD.Demo/
 ├── Controllers/
 ├── Models/
@@ -118,7 +119,7 @@ PNDD.Demo/
 └── PNDD.Demo.Tests/
 ├── BasePathTest.cs
 └── TransactionCreatePathTest.cs
-
+```
 
 ---
 
