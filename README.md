@@ -20,7 +20,8 @@ Multiple `PathNode`s are grouped into a class that defines a feature flow.
 
 Test classes execute all the `PathNode`s in a path sequentially, driving the browser using Playwright and verifying behavior with assertions.
 
-```public class PathNode
+```cs
+public class PathNode
 {
     public string Url { get; set; }
     public string? Action { get; set; }
@@ -68,10 +69,13 @@ public class TransactionCreatePath : IPath
             }
         }
     };
-}```
+}
+```
 
 ###Test:
-```[Test]
+
+```cs
+[Test]
 public async Task CreateTransaction_EndToEnd()
 {
     var baseUrl = "https://localhost:7237";
@@ -87,9 +91,8 @@ public async Task CreateTransaction_EndToEnd()
         if (node.AssertState is not null)
             await node.AssertState(Page);
     }
-}```
-
-
+}
+```
 
 ---
 
