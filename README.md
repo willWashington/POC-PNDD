@@ -5,14 +5,15 @@ This project demonstrates **Path Node Driven Design (PNDD)** — a strategy that
 
 ---
 
-## Requirements
+## Install Requirements
 
 - Docker
 - Postgres SQL
-- EF
-- C# 8
-- Potentially Reflection or other tools for looking inward at the source (to capture paths).
+- C# / .NET / EF
 - // What am I missing?
+
+## Execution:
+- Run `dotnet test` from the root (iirc - test explorer is failing atm - forcing me to try to run the server separately)
 
 ---
 
