@@ -7,12 +7,12 @@ This project demonstrates **Path Node Driven Design (PNDD)** — a strategy that
 
 ## Requirements
 
-Docker
-Postgres SQL
-EF
-C# 8
-Potentially Reflection or other tools for looking inward at the source (to capture paths).
-What am I missing?
+- Docker
+- Postgres SQL
+- EF
+- C# 8
+- Potentially Reflection or other tools for looking inward at the source (to capture paths).
+- // What am I missing?
 
 ---
 
